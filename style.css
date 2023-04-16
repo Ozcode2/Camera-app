@@ -1,0 +1,117 @@
+html, body {
+    width: 500px;
+    height: 487px;
+    background-color: black;
+}
+
+#videos {
+    position: absolute;
+    left: 200px;
+}
+.container {
+    position: absolute;
+    left: 35px;
+    height: 500px;
+    width: 1000px;
+    background-color: gold;
+    border-radius: 50px;
+    opacity: 0.7;
+    top: 0;
+    animation: mymove 5s infinite;
+}
+.snapper{
+    margin-top: 428px;
+    margin-left: 600px;
+}
+#snap {
+    background-color: rgb(255, 0, 183);
+    transform: scale(2);
+    border-radius: 20px;
+    cursor: pointer;
+    animation: tv 5s infinite; 
+}
+#snap:hover{
+    box-shadow: 0 0 10px blue,
+                0 0 10px blue,
+                0 0 15px blue;
+    filter: hue-rotate(40deg);
+    top: 20px;
+}
+
+@keyframes tv{
+    50% {
+        border-bottom-color: deeppink;
+        border-left-color: yellowgreen;
+        border-right-color: lawngreen;
+        border-top-color: lavender;
+    }
+}
+#record {
+    position: absolute;
+    bottom: 50px;
+    background-color: rgb(255, 0, 179);
+    margin-left: 400px;
+    transform: scale(2);
+    border-radius: 20px;
+    cursor: pointer;
+    animation: move 5s infinite;
+
+}
+@keyframes move {
+    50% {
+        border-bottom-color: deeppink;
+        border-left-color: yellowgreen;
+        border-right-color:lawngreen;
+        border-top-color: lavender;
+    }
+}
+
+#record:hover{
+    box-shadow: 0 0 10px blue,
+                0 0 10px blue,
+                0 0 15px blue;
+    filter: hue-rotate(40deg);
+}
+#video{
+    position: absolute;
+    top: 250px;
+    margin-left: 30px;
+}
+#canvas{
+    position: absolute;
+    top: 250px;
+    margin-left: 870px;
+}
+
+#delete-button{
+    position: absolute;
+    margin-left: 60px;
+    top: 380px;
+    transform: scale(2);
+    border-radius: 20px;
+    border-color: white;
+    background-color: rgb(255, 0, 179);
+    cursor: pointer;
+}
+
+#clear-button {
+    position: absolute;
+    margin-left: 910px;
+    top: 380px;
+    transform: scale(2);
+    border-radius: 20px;
+    border-color: white;
+    background-color: rgb(255, 0, 179);
+    cursor: pointer;
+}
+
+@keyframes mymove{
+    from {
+        background-color: gold;
+    }
+
+    to {
+        background-color: green;
+    }
+    
+}
